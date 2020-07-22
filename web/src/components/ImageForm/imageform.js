@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 
-import env from '../../env'
 import defaultImage from '../../assets/images/defaultImage.jpg'
 
 class ImageForm extends Component {
@@ -40,7 +39,14 @@ class ImageForm extends Component {
 		let data = new FormData()
 		data.append('file', this.state.file)
 		
-		let API_URL = 'http://' + env.INTERNAL_IP + ':' + env.INTERNAL_PORT+ '/api/predict'
+		const INTERNAL_IP = process.env.REACT_APP_INTERNAL_IP
+		const INTERNAL_PORT = process.env.REACT_APP_INTERNAL_PORT
+
+		console.log(INTERNAL_IP)
+		console.log(INTERNAL_PORT)
+		console.log(process.env)
+
+		let API_URL = 'http://' + INTERNAL_IP + INTERNAL_PORT+ '/api/predict'
 
 		fetch(API_URL, {
 			method: 'POST',

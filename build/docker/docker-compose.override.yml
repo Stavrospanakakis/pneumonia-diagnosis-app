@@ -9,6 +9,9 @@ services:
     volumes:
       - ../../web:/web
       - /web/node_modules
+    environment: 
+      REACT_APP_INTERNAL_IP: 'localhost'
+      REACT_APP_INTERNAL_PORT: ':8000'
     ports:
       - 3000:3000
     networks:
