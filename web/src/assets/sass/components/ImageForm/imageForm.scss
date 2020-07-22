@@ -1,0 +1,47 @@
+.imageForm {
+    margin-top: 150px;
+    .title {
+        text-align: center;
+    }
+    .image {
+        width: 380px;
+        height:380px;
+        border: 2px solid #f1f1f1;
+        border-radius: 3px;
+    }
+    .default {
+        filter: blur(3px);
+        filter: opacity(60%);
+    }
+    .form {
+        .input{
+            margin-top:10px;
+            color:white;
+            display: block;
+            &::-webkit-file-upload-button{
+                @include button;
+                &:hover {
+                    @include buttonHover;
+                }
+            }
+        }
+        .btn {
+            @include button;
+            &:not(:disabled):hover {
+                @include buttonHover;
+            }
+            &:disabled{
+                opacity: 40%;
+                cursor: unset;   
+            }
+        }
+    }
+    .result {
+        color: #000;
+        border: 2px solid rgb(219, 208, 208);
+        border-radius: 3px;
+        text-align: center;
+        height:30px;
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,19 @@
+@mixin button {
+    color:white;
+    background-color: #00629B;
+    border: 2px solid #00629b;
+    padding:5px;
+    border-radius: 3px;
+    width: 380px;
+    cursor:pointer;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: .011em;
+    margin-bottom: 5px;
+}
+
+@mixin buttonHover {
+    border: 2px solid rgb(17, 140, 211);
+    background-color: rgb(17, 140, 211);
+    transition: 0.2s ease-in-out;
+}
