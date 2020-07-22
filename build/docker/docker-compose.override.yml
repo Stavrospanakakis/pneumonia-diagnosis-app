@@ -1,0 +1,30 @@
+version: '3.3'
+services: 
+  web:
+    build:
+      context: ../..
+      dockerfile: ./build/docker/images/dev.web.Dockerfile
+    restart: always
+    stdin_open: true
+    volumes:
+      - ../../web:/web
+      - /web/node_modules
+    ports:
+      - 3000:3000
+    networks:
+      - frontend
+  app:
+    build:
+      context: ../..
+      dockerfile: ./build/docker/images/dev.app.Dockerfile
+    restart: always
+    volumes:
+      - ../../app:/app
+    ports:
+      - 8000:8000
+    networks:
+      - backend
+      
+networks:
+  frontend: {}
+  backend: {}
