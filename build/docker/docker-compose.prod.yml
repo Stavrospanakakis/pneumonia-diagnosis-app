@@ -1,0 +1,22 @@
+version: "3.3"
+
+services:
+  web:
+    ports:
+      - 3000:3000
+    command: serve -s build -l 3000
+    networks:
+      - frontend
+
+  app:
+    ports:
+      - "8000:8000"
+    command: gunicorn -w 1 -b 0.0.0.0:8000 wsgi:app
+    networks:
+        - backend
+
+networks:
+  frontend:
+    driver: overlay
+  backend:
+    driver: overlay
