@@ -3,8 +3,6 @@ version: "3.3"
 services:
   web:
     image: stavrospanakakis/pneumonia-diagnosis-app_web
-    args: 
-      REACT_APP_INTERNAL_IP: ${REACT_APP_INTERNAL_IP}
-      REACT_APP_INTERNAL_PORT: ${REACT_APP_INTERNAL_PORT}
+    
   app:
     image: stavrospanakakis/pneumonia-diagnosis-app_app
