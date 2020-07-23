@@ -40,8 +40,8 @@ Open the browser at http://localhost:3000.
 $ git clone https://github.com/Stavrospanakakis/pneumonia-diagnosis-app.git
 
 # Set the environment variables
-$ echo "REACT_APP_INTERNAL_IP=localhost" >> ~/.your-bash-profile
-$ echo "REACT_APP_INTERNAL_PORT=:8000" >> ~/.your-bash-profile
+$ echo "export REACT_APP_INTERNAL_IP=localhost" >> ~/.your-bash-profile
+$ echo "export REACT_APP_INTERNAL_PORT=:8000" >> ~/.your-bash-profile
 ```
 #### Frontend
 ```
