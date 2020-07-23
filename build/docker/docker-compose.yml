@@ -3,6 +3,5 @@ version: "3.3"
 services:
   web:
     image: stavrospanakakis/pneumonia-diagnosis-app_web
-    
   app:
     image: stavrospanakakis/pneumonia-diagnosis-app_app
