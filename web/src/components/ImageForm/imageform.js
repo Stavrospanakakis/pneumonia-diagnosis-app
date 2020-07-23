@@ -46,13 +46,13 @@ class ImageForm extends Component {
 		console.log(INTERNAL_PORT)
 		console.log(process.env)
 
-		let API_URL = 'http://' + INTERNAL_IP + INTERNAL_PORT+ '/api/predict'
+		let API_URL = 'http://' + INTERNAL_IP + INTERNAL_PORT + '/api/predict'
 
 		fetch(API_URL, {
 			method: 'POST',
 			body: data
 		})
-		.then(response => { 			
+		.then(response => { 
 			response.json().then((jsonResponse) => {
 				this.setState({
 					msg: jsonResponse.pred
