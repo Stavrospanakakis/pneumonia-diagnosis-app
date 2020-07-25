@@ -49,6 +49,7 @@ $ echo "export REACT_APP_INTERNAL_PORT=:8000" >> ~/.your-bash-profile
 $ cd pneumonia-diagnosis-app/web
 
 # Install dependancies
+$ yarn global add react-scripts
 $ yarn 
 
 # Run server
