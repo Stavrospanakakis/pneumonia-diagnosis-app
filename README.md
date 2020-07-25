@@ -58,7 +58,7 @@ $ yarn start
 
 Open the browser at http://localhost:3000.
 
-### Backend
+#### Backend
 ```
 # Go to the root folder
 $ cd pneumonia-diagnosis-app
