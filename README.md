@@ -9,7 +9,7 @@ If you want to check the training algorithm:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Stavrospanakakis/pneumonia-diagnosis/blob/master/pneumonia_diagnosis.ipynb)
 
-[![Open in Github](https://img.shields.io/badge/-Open%20in%20Gihub-gray)](https://github.com/Stavrospanakakis/pneumonia-diagnosis-app)
+[![Open in Github](https://img.shields.io/badge/-Open%20in%20Gihub-gray)](https://github.com/Stavrospanakakis/pneumonia-diagnosis)
 ## Development
 
 ### Docker
