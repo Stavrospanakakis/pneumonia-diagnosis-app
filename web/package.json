@@ -3,14 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.1",
-    "@testing-library/react": "^10.0.1",
+    "@types/node": "^12.7.5",
+    "@types/react": "16.8.23",
+    "@types/react-dom": "16.8.4",
     "global": "^4.4.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "typescript": "^3.5.3",
     "yarn": "^1.22.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.1",
+    "@testing-library/react": "^10.0.1",
+    "@types/jest": "^26.0.8",
+    "@types/react-test-renderer": "^16.9.3",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
+    "eslint": "^6.6.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-react": "^7.20.5"
   },
   "scripts": {
     "start": "react-scripts start",
