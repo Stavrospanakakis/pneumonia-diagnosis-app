@@ -5,7 +5,7 @@ web/.pnp.js
 
 # testing
 web/coverage
-web/src/__snapshots__
+
 # production
 web/build
 
@@ -24,3 +24,4 @@ web/yarn-error.log*
 
 app/ai/__pycache__
 app/__pycache__
+app/env
