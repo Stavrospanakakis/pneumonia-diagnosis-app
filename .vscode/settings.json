@@ -1,0 +1,15 @@
+{
+    "editor.tabSize": 2,
+    "git.autofetch": true,
+    "eslint.enable": true,
+    "eslint.workingDirectories": [
+        "./web"
+    ],
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    }
